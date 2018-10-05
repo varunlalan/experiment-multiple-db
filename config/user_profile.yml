@@ -1,0 +1,9 @@
+user_profile_db: &user_profile_db
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+
+development:
+  <<: *user_profile_db
+  database: user_profile_db_dev
