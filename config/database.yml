@@ -1,0 +1,10 @@
+main_db: &main_db
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 5
+  username: root
+
+development:
+  <<: *main_db
+  host: localhost
+  database: main_db_dev
